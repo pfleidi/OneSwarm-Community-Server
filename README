@@ -9,9 +9,11 @@ Dependencies:
 
 Getting started requires: 
 1) Installing MySQL
-2) Modifying the sample-communtiy.conf (to include your database info, as well as your SSL certificate if you are using SSL)
-3) (Potentially) changing the JAVA_HOME variable in the start-* script for your platform
-4) Running the start script with your configuration file as an argument
+2) Seting a mysql password: mysqladmin -u root password yournewpassword
+3) Creating the database:  mysql -u root --password=yournewpassword -e 'CREATE DATABASE community_db;'
+3) Modifying the sample-communtiy.conf (to include your database info, as well as your SSL certificate if you are using SSL)
+4) (Potentially) changing the JAVA_HOME variable in the start-* script for your platform
+5) Running the start script with your configuration file as an argument
 
 Questions, concerns, and comments should be posted in the forum:
 http://forum.oneswarm.org/
